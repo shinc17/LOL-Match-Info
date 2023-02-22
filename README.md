@@ -63,8 +63,8 @@ Example:
 
 ```c
 char * user;
-user = get_summoner_username("MurphyTheTurtle");
-/* user now holds "MurphyTheTurtle"
+user = get_summoner_username("Razwill");
+/* user now holds "Razwill"
 ```
 
 #### `get_summoner_puuid(char * summoner_name)`
@@ -77,10 +77,10 @@ Example:
 static char puuid[20];
 const char * buffer;
 
-buffer = get_summoner_puuid("MurphyTheTurtle");
+buffer = get_summoner_puuid("Razwill");
 strcpy(puuid, buffer);
 /* This process should be repeated if you want a different ID: */
-buffer = get_summoner_puuid("C9 Sneaky");
+buffer = get_summoner_puuid("HW Lee");
 strcpy(puuid, buffer);
 ```
 
